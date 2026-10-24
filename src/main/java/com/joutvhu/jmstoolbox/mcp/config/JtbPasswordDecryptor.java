@@ -9,7 +9,7 @@ import java.util.Base64;
 /**
  * Replicates decryption of JMSToolBox passwords.
  * Exactly matches org.titou10.jtb.util.EncryptUtils from JMSToolBox.
- * Format: {##}<base64_encoded_ciphertext>
+ * Format: {@code {##}<base64_encoded_ciphertext>}
  */
 public class JtbPasswordDecryptor {
     private static final String DEFAULT_KEY = "JMSToolBox!?&$*-";

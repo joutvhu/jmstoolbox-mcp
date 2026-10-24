@@ -1,0 +1,48 @@
+{
+  "name": "jmstoolbox-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for JMS messaging brokers with dynamic driver loading and JMSToolBox configuration support",
+  "main": "bin/index.js",
+  "bin": {
+    "jmstoolbox-mcp": "bin/index.js"
+  },
+  "scripts": {
+    "start": "node bin/index.js",
+    "publish:local": "node scripts/publish-local.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joutvhu/jmstoolbox-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "jmstoolbox",
+    "jms",
+    "activemq",
+    "artemis",
+    "ibmmq",
+    "rabbitmq",
+    "tibco",
+    "solace",
+    "weblogic",
+    "messaging",
+    "queue",
+    "ai"
+  ],
+  "author": "Giao Ho <joutvhu@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/joutvhu/jmstoolbox-mcp/issues"
+  },
+  "homepage": "https://github.com/joutvhu/jmstoolbox-mcp#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "bin/",
+    "jmstoolbox-mcp.jar",
+    "README.md",
+    "LICENSE"
+  ]
+}

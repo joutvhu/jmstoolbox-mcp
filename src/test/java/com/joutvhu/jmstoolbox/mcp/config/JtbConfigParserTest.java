@@ -17,6 +17,15 @@ public class JtbConfigParserTest {
         // Plaintext test
         assertEquals("secret123", JtbPasswordDecryptor.decrypt("secret123"));
         assertNull(JtbPasswordDecryptor.decrypt(null));
+
+        // Test Encrypt and Decrypt symmetry matching JMSToolBox
+        String original = "mySecretPassword#2026!";
+        String encrypted = JtbPasswordDecryptor.encrypt(original);
+        assertNotNull(encrypted);
+        assertTrue(encrypted.startsWith("{##}"));
+
+        String decrypted = JtbPasswordDecryptor.decrypt(encrypted);
+        assertEquals(original, decrypted);
     }
 
     @Test

@@ -5,9 +5,9 @@ target/
 .vscode/
 dependency-reduced-pom.xml
 *.jar
-!jmstoolbox-mcp.jar
-!.mvn/wrapper/maven-wrapper.jar
 dist/
 node_modules/
 *.tgz
 *.log
+.DS_Store
+Thumbs.db
